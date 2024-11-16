@@ -1,0 +1,13 @@
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
