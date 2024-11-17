@@ -1,7 +1,6 @@
 import React from 'react';
 import OfferSection from '../../components/OfferSection/OfferSection';
 import UpcomingClasses from '../../components/UpcomingClasses/UpcomingClasses';
-import OnlineClass from '../../components/OnlineClass/OnlineClass';
 import './Home.css';
 import Events from '../../components/Events/Events';
 import Testimonials from '../../components/Testimonials/Testimonials';
