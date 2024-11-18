@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 import logo from './logo3.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
@@ -117,8 +118,9 @@ const Navbar = () => {
       <div className="navbar-header">
         <img src={logo} alt="Logo" className="navbar-logo" />
         <div className="navbar-title">
+          <Link to="/" className="navbar-title">
           <h1>IT TRAINING NEPAL</h1>
-          <p>Imparting IT Skills</p>
+          <p>Imparting IT Skills</p></Link>
         </div>
       </div>
 

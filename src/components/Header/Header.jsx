@@ -1,8 +1,21 @@
 import React from 'react';
 import './Header.css'; // External CSS file for styling
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Header = () => {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  // Function to handle navigation to Apply Teaching page
+  const handleInstructorClick = () => {
+    navigate('/applyteaching');
+  };
+
+  // Function to handle navigation to Contact Us page
+  const handleInquiryClick = () => {
+    navigate('/contactus');
+  };
+
   return (
     <div className="header-container">
       {/* Discount Message Section */}
@@ -22,8 +35,14 @@ const Header = () => {
         </div>
         
         <div className="action-buttons">
-          <button className="btn instructor-btn">Become an Instructor ➔</button>
-          <button className="btn inquiry-btn">Send Inquiry ➔</button>
+          {/* Button to navigate to Apply Teaching */}
+          <button className="btn instructor-btn" onClick={handleInstructorClick}>
+            Become an Instructor ➔
+          </button>
+          {/* Button to navigate to Contact Us */}
+          <button className="btn inquiry-btn" onClick={handleInquiryClick}>
+            Send Inquiry ➔
+          </button>
         </div>
       </div>
     </div>
