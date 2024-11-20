@@ -25,6 +25,7 @@
     "react-router-dom": "^6.23.1",
     "react-switch": "^7.0.0",
     "react-toastify": "^10.0.5",
+    "swiper": "^11.1.15",
     "yup": "^1.4.0",
     "yup-password": "^0.4.0"
   },

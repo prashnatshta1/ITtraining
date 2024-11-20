@@ -1,62 +1,20 @@
-/* Section Styling */
 .clients-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9; /* Light background for contrast */
+  background-color: #f9f9f9;
+  padding: 40px 0;
 }
 
-/* Align the heading text to the left */
-.clients-section h2 {
-  text-align: left; /* Force left alignment */
-  margin-bottom: 20px; /* Add some spacing below the heading */
-  font-size: 24px; /* Optional: Adjust font size */
-  font-weight: bold; /* Optional: Make the text bold */
+.client-slide {
+  text-align: center;
 }
 
-/* Client Container Styling */
-.clients-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+.client-logo {
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
 }
 
-/* Client Item Styling */
-.client__slider__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 150px; /* Set width for uniformity */
-  text-align: center; /* Center text inside individual items */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.client__slider__item:hover {
-  transform: translateY(-5px); /* Adds a hover effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.client__img {
-  width: 100px;
-  height: 50px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .clients-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .client__slider__item {
-    width: 100%;
-    max-width: 300px; /* Limit width on smaller screens */
-  }
+.client-name {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
 }
