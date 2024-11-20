@@ -170,8 +170,7 @@ const Clients = () => {
           {clients.map((client) => (
             <SwiperSlide key={client.id}>
               <div className="client-slide">
-                <img src={client.logo} alt={client.name} className="client-logo" loading="lazy" />
-                <p className="client-name">{client.name}</p>
+              <img src={client.logo} alt={`Client logo ${client.id}`} className="client-logo" loading="lazy" />
               </div>
             </SwiperSlide>
           ))}

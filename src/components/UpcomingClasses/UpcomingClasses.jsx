@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './UpcomingClasses.css';
 import basic from './courses/basic.webp';
 import auto from './courses/autocad.webp';
@@ -7,8 +7,12 @@ import ccna from './courses/ccna.webp';
 import digital from './courses/digital.webp';
 import spring from './courses/spring.jpeg';
 import web from './courses/webdesign.webp';
+import Popup from './Popup'; // Import the popup component
 
 const UpcomingClasses = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedCourse, setSelectedCourse] = useState('');
+
   const classes = [
     {
       title: 'Basic Computer Course',
@@ -75,6 +79,14 @@ const UpcomingClasses = () => {
       discount: null,
     },
   ];
+  const handleRegisterClick = (courseTitle) => {
+    setSelectedCourse(courseTitle);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <div className="upcoming-classes">
@@ -96,11 +108,20 @@ const UpcomingClasses = () => {
               <p>Time</p>
               <span className="time-label">{classItem.time || 'TBD'}</span>
             </div>
-            {classItem.discount && <p className="discount">Discount: {classItem.discount}</p>}
-            <button className="register-btn">Register</button>
+            {classItem.discount && <p className="discountp">Discount: {classItem.discount}</p>}
+            <button className="register-btn" onClick={() => handleRegisterClick(classItem.title)}>
+              Register
+            </button>
           </div>
         ))}
       </div>
+
+      {showPopup && (
+        <Popup
+          course={selectedCourse}
+          onClose={closePopup}
+        />
+      )}
     </div>
   );
 };
