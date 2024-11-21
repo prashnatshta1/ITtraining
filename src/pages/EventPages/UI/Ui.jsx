@@ -1,5 +1,5 @@
 import React from "react";
-import "./UI.css";
+import "./Ui.css";
 
 const UI = () => {
   return (
