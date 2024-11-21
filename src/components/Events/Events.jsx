@@ -12,7 +12,7 @@ const events = [
     title: "3 Days Workshop of UI/UX",
     location: "Putalisadak",
     description: "Free workshop on UI/UX",
-    readMoreLink: "/ui", // Navigation path
+    readMoreLink: "/UI", // Navigation path
   },
   {
     id: 2,

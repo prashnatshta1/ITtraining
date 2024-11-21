@@ -1,7 +1,7 @@
 import React from "react";
 import "./Ui.css";
 
-const UI = () => {
+const Ui = () => {
   return (
     <div className="workshop-page">
       {/* Banner Section */}
@@ -64,4 +64,6 @@ const UI = () => {
   );
 };
 
-export default UI;
+export default Ui;
+
+  
