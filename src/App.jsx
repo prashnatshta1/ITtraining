@@ -8,7 +8,7 @@ import InternshipOpportunity from './pages/Internship/InternshipOpportunity'
 import ApplyTeaching from './pages/Hiring/ApplyTeaching'
 import ContactUs from './pages/ContactUs/ContactUs'
 import ContactForm from './pages/ContactForm/ContactForm'
-import UI from './pages/EventPages/UI/Ui'
+import UI from './pages/EventPages/UI/UI'
 import Python from './pages/EventPages/Python/Python'
 import DigitalMarketing from './pages/EventPages/DigitalMarketing/DigitalMarketing'
 
