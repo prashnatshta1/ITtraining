@@ -34,6 +34,10 @@
     margin: 0 auto 10px;
     transition: all 0.4s ease-in-out;
   }
+  .class-card:hover .class-image {
+    transform: scale(1.1); /* Zooms the image slightly */
+    filter: brightness(0.9); /* Slightly darkens the image */
+  }
   
   .class-card h3 {
     font-size: 16px;

@@ -7,6 +7,7 @@ import ccna from './courses/ccna.webp';
 import digital from './courses/digital.webp';
 import spring from './courses/spring.jpeg';
 import web from './courses/webdesign.webp';
+import python from './courses/python.png'
 import Popup from './Popup'; // Import the popup component
 
 const UpcomingClasses = () => {
@@ -67,7 +68,7 @@ const UpcomingClasses = () => {
       trainer: 'Dhan',
       date: '2024-11-20',
       time: '10:30-12:00',
-      image: 'python.png',
+      image: python,
       discount: '20%',
     },
     {

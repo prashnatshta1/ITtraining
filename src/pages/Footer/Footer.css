@@ -75,4 +75,17 @@
   .footer-bottom p {
     margin: 0;
   }
-  
+
+  .footer-flex{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-basis: 25%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-flex > div {
+    flex: 1; /* Makes each div take equal width */
+    min-width: 0; /* Ensures the items don't overflow */
+  }

@@ -5,7 +5,7 @@ import './Footer.css'; // Import the CSS file
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-container footer-flex">
         
         {/* Important Links */}
         <div className="footer-section">
@@ -76,6 +76,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr />
+      
       <div className="footer-bottom">
         <p>Copyright © 2010 - 2022 ittrainingnepal.com. All rights reserved.</p>
       </div>

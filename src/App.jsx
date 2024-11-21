@@ -8,6 +8,9 @@ import InternshipOpportunity from './pages/Internship/InternshipOpportunity'
 import ApplyTeaching from './pages/Hiring/ApplyTeaching'
 import ContactUs from './pages/ContactUs/ContactUs'
 import ContactForm from './pages/ContactForm/ContactForm'
+import UI from './pages/EventPages/UI/Ui'
+import Python from './pages/EventPages/Python/Python'
+import DigitalMarketing from './pages/EventPages/DigitalMarketing/DigitalMarketing'
 
 const App = () => {
   return (
@@ -20,6 +23,10 @@ const App = () => {
         <Route path= "/applyteaching" element={<ApplyTeaching />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/contactform" element={<ContactForm />} />
+        <Route path="/UI" element={<UI />} />
+        <Route path="/Python" element={<Python />} />
+        <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+
       </Routes>
       <Footer />
       

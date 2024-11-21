@@ -1,0 +1,90 @@
+/* Banner Styling */
+.banner {
+    background-image: url('./src/components/Events/events/UI.webp');
+    background-size: 180%;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .banner-content {
+    max-width: 50%;
+    color: #333;
+  }
+  
+  .breadcrumbs {
+    font-size: 14px;
+    color: #ff8c00; /* Orange color for breadcrumbs */
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs .active {
+    color: #000; /* Active breadcrumb in black */
+    font-weight: bold;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .banner p strong {
+    color: #003399; /* Dark blue for emphasis */
+  }
+  
+  .banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Workshop Details Styling */
+  .workshop-details {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    
+
+    background-color: #f9f9f9;
+  }
+  
+  .workshop-details h3 {
+    margin-top: 20px;
+    color: #003399;
+  }
+  
+  .workshop-details ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .workshop-details a {
+    color: #ff8c00;
+    text-decoration: none;
+  }
+  
+  .workshop-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .workshop-details strong {
+    color: #333;
+  }
+  
+  /* General Page Styling */
+  .workshop-page {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  

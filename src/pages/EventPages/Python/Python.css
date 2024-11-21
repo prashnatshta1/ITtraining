@@ -1,0 +1,114 @@
+/* Python.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.python-workshop-page {
+    padding: 0;
+}
+
+/* Banner Section */
+.python-banner {
+    background-image: url('./src/components/Events/events/Python.jpg');
+    background-size: 150%;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.python-banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.python-banner-content h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.python-breadcrumbs {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.python-breadcrumbs .python-active {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Workshop Details Container */
+.python-workshop-container {
+    background-color: #fff;
+    padding: 20px;
+    
+    margin: 20px auto; /* Center container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left; /* Align content to the left */
+}
+
+.python-workshop-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.python-workshop-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.python-register-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.python-register-button:hover {
+    background-color: #0056b3;
+}
+
+.python-workshop-highlights h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.python-workshop-highlights ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+    color: #555;
+}
+
+.python-workshop-highlights ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.python-view-toggle {
+    margin-top: 20px;
+}
+
+.python-view-less {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.python-view-less:hover {
+    text-decoration: underline;
+}

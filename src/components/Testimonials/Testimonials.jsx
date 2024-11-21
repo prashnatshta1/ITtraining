@@ -1,5 +1,12 @@
-import React, { useState } from 'react';
 import './Testimonials.css';
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import { Autoplay} from 'swiper/modules';
+
 import logo from './image.png'; // replace with the correct path to your logo
 
 const testimonials = [
@@ -45,27 +52,30 @@ const Testimonials = () => {
     <div className="testimonials-container">
       <h2>Student's <span className="highlight">Feedback</span></h2>
       
+      <Swiper
+  spaceBetween={30}
+  slidesPerView={3}
+  loop={true}
+  centeredSlides={true}
+  autoplay={{
+    delay: 2500,
+    disableOnInteraction: false,
+  }}
+  modules={[Autoplay]}
+  className="mySwiper"
+>
+  {testimonials.map((testimonial, index) => (
+    <SwiperSlide key={index}>
       <div className="testimonial-card">
         <img src={logo} alt="Logo" className="testimonial-logo" />
         <p className="testimonial-quote">"</p>
-        <p className="testimonial-feedback">{testimonials[currentIndex].feedback}</p>
-        <p className="testimonial-name">{testimonials[currentIndex].name}</p>
+        <p className="testimonial-feedback">{testimonial.feedback}</p>
+        <p className="testimonial-name">{testimonial.name}</p>
       </div>
-
-      <div className="carousel-controls">
-        <button onClick={handlePrev} className="carousel-button">&lt;</button>
-        <button onClick={handleNext} className="carousel-button">&gt;</button>
-      </div>
-
-      <div className="pagination-dots">
-        {testimonials.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => setCurrentIndex(index)}
-          ></span>
-        ))}
-      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+      
 </div>
   );
 };
