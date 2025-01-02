@@ -11,6 +11,7 @@ import ContactForm from './pages/ContactForm/ContactForm'
 import Python from './pages/EventPages/Python/Python'
 import DigitalMarketing from './pages/EventPages/DigitalMarketing/DigitalMarketing'
 import Ui from './pages/EventPages/UiUx/Ui'
+import RustProgramming from './pages/SearchPages/Programming/RustProgramming'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/UI" element={<Ui />} />
         <Route path="/Python" element={<Python />} />
         <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+        <Route path="/RustProgramming" element={<RustProgramming />} />
 
       </Routes>
       <Footer />

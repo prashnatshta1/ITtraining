@@ -1,0 +1,56 @@
+/* FAQs.css */
+.faq-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-container h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-item.active .faq-question {
+    background-color: #e9f3fc;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+  
+  .faq-question:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .faq-icon {
+    font-size: 12px;
+  }
+  
